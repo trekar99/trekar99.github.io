@@ -1,0 +1,30 @@
+{% if page.slug == "music" %}
+<style>
+    html, body { overflow-x: hidden !important; }
+</style>
+<div id="shorts-3d-container" style="perspective:1200px; width:100vw; height:460px; display:flex; align-items:center; justify-content:center; margin-bottom:2rem; overflow:visible; position:relative;">
+    <div id="shorts-wheel" style="position:absolute; left:20%; top:0; width:1100px; height:460px; transform:translateX(-50%);">
+        <!-- Miniaturas 3D -->
+    </div>
+</div>
+<script type="module">
+import { initShortsCarousel } from '/js/shorts-carousel.js';
+
+const wheelId = 'shorts-wheel';
+
+async function getShortsFromList() {
+    const res = await fetch('/data/shorts-ids.json');
+    const ids = await res.json();
+    return ids.map(id => ({
+        videoId: id,
+        thumb: `https://i.ytimg.com/vi/${id}/maxresdefault.jpg`,
+        title: ''
+    }));
+}
+
+document.addEventListener('DOMContentLoaded', async function() {
+    const shorts = await getShortsFromList();
+    initShortsCarousel({ containerId: wheelId, items: shorts });
+});
+</script>
+{% endif %}

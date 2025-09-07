@@ -42,8 +42,8 @@ name = "Archive"
 url = "$BASE_URL/archive"
 
 [[extra.menu]]
-name = "Tags"
-url = "$BASE_URL/tags"
+name = "Music"
+url = "$BASE_URL/music"
 
 [extra.profile]
 name = "trekar"
