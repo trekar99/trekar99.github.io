@@ -45,10 +45,10 @@ url = "$BASE_URL/archive"
 name = "Tags"
 url = "$BASE_URL/tags"
 
-# [extra.profile]
-# name = "trekar"
+[extra.profile]
+name = "trekar"
 # bio = "A blog containing my personal rants and findings about software"
-# avatar_url = "images/profile.jpg"
+avatar_url = "images/mapache.png"
 
 [[extra.profile.social]]
 name = "github"
