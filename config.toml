@@ -29,13 +29,17 @@ comment = true
 name = "About"
 url = "$BASE_URL/about"
 
-[[extra.menu]]
-name = "Projects"
-url = "$BASE_URL/projects"
+# [[extra.menu]]
+# name = "Projects"
+# url = "$BASE_URL/projects"
 
 [[extra.menu]]
 name = "Blog"
 url = "$BASE_URL/blog"
+
+[[extra.menu]]
+name = "Books"
+url = "$BASE_URL/books"
 
 [[extra.menu]]
 name = "Sports"
