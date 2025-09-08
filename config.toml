@@ -38,8 +38,8 @@ name = "Blog"
 url = "$BASE_URL/blog"
 
 [[extra.menu]]
-name = "Archive"
-url = "$BASE_URL/archive"
+name = "Sports"
+url = "$BASE_URL/sports"
 
 [[extra.menu]]
 name = "Music"
