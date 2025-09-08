@@ -1,12 +1,17 @@
 {% if page.slug == "music" %}
-<style>
-    html, body { overflow-x: hidden !important; }
-</style>
-<div id="shorts-3d-container" style="perspective:1200px; width:100vw; height:460px; display:flex; align-items:center; justify-content:center; margin-bottom:2rem; overflow:visible; position:relative;">
-    <div id="shorts-wheel" style="position:absolute; left:20%; top:0; width:1100px; height:460px; transform:translateX(-50%);">
-        <!-- Miniaturas 3D -->
-    </div>
+<div id="shorts-3d-container" style="perspective:1200px; width:100vw; height:520px; display:flex; align-items:center; justify-content:center; margin-bottom:2rem; overflow:visible; position:relative;">
+    <div id="shorts-wheel" style="position:absolute; left:20%; top:0; width:1100px; height:520px; transform:translateX(-50%);"></div>
 </div>
+<style>
+body, html {
+    overflow-x: hidden !important;
+    overflow-y: hidden !important;
+    overscroll-behavior: none;
+}
+@media (min-width: 800px) {
+    body { overflow-x: hidden !important; }
+}
+</style>
 <script type="module">
 import { initShortsCarousel } from '/js/shorts-carousel.js';
 
